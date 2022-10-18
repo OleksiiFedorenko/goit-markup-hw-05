@@ -594,3 +594,8 @@ img {
 
   background-color: var(--bg-backdrop);
 }
+
+.modal {
+  width: 528px;
+  height: 581px;
+}
