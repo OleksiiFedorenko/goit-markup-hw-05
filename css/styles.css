@@ -242,11 +242,11 @@ img {
 }
 
 .socials-link {
-  width: 44px;
-  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 44px;
+  height: 44px;
 
   fill: var(--icons-color);
   background-color: var(--white-color);
@@ -436,11 +436,11 @@ img {
 }
 
 .clients-link {
-  width: 170px;
-  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 92px;
 
   fill: var(--icons-color);
   border: 1px solid var(--icons-color);
@@ -583,6 +583,26 @@ img {
     0px 2px 2px rgb(0 0 0/ 0.12);
 }
 
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  /* padding: 5px 5px; */
+
+  fill: var(--black-color);
+
+  cursor: pointer;
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
 /* Modal */
 
 .backdrop {
@@ -595,7 +615,22 @@ img {
   background-color: var(--bg-backdrop);
 }
 
+.backdrop.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
 .modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
   width: 528px;
   height: 581px;
+
+  background-color: var(--white-color);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
